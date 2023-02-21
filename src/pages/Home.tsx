@@ -24,9 +24,9 @@ export function Home() {
     //TODO - toggle task done if exists
     const updateTasks = tasks.map(tasks => ({...tasks}))
     
-    const findTask = updateTasks.find(item => item.id === id);
+    const finTask = updateTasks.find(item => item.id === id);
 
-    if(!findTask)
+    if(!finTask)
       return
 
     findTask.done = !findTask.done;
